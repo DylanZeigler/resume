@@ -31,10 +31,15 @@ body {
     text-align: center;
     width: 34px;
   }
+
+  .school-name {
+    font-weight: bold;
+  }
   
   .header {
-    background-color: lightblue;
+    background-color: rgb(0, 191, 255);
     font-size: 40px;
+    text-align: center;
   }
   .square:focus {
     outline: none;
@@ -43,7 +48,20 @@ body {
   .kbd-navigation .square:focus {
     background: #ddd;
   }
-  
+  .about-me {
+    width: 600px; 
+    display: table-cell;
+  }
+  .about-me-table{
+    width: 100%; 
+    display: table;
+  }
+  .about-me-table-row{
+    display: table-row;
+  }
+  .parke-image{
+    display: table-cell;
+  }
   .game {
     display: flex;
     flex-direction: row;

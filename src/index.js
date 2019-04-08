@@ -18,7 +18,7 @@ import parkeImage from './images/parke.jpg';
 //   }
 
 function ImageLoader(props) {
-    return <img src={parkeImage} alt="Parkes Headshot" />;
+    return <img src={parkeImage} alt="Parkes Headshot" className="parke-image"/>;
   }
 
 function HeaderLoader(props){
@@ -26,7 +26,7 @@ function HeaderLoader(props){
 }
 
 function AboutMe(props) {
-  return <p> I am a self-starter and a team player. Motivated to
+  return <p className="about-me"> I am a self-starter and a team player. Motivated to
   help others, and recognized for providing an
   outstanding client experience and interaction.
   Seeking a career in marketing to apply my degree
@@ -36,16 +36,24 @@ function AboutMe(props) {
 }
 
 function Experience(props) {
-  return <p> TODO - experience
-  </p>;
+  return <div>
+
+  </div>;
 }
 function Education(props) {
-  return <p> TODO - education
-  </p>;
+  return <div>
+    <p className="school-name">VIRGINIA TECH</p>
+    <p className="degree-name">B.S. IN BUSINESS MARKETING, SALES CONCENTRATION</p> 
+    <p className="class-year">CLASS OF 2016</p>
+    <p className="gpa">3.52 GPA</p> 
+  </div>;
 }
 function ContactMe(props) {
-  return <p> TODO - contact
-  </p>;
+  return <div>
+    <p className="phone-numer"> c: 732.540.3114 </p>
+    <p className="email">parkeehunter@gmail.com </p>
+    <p className="address">Denver, CO 80202</p>
+  </div>;
 }
   // class Board extends React.Component {
   //     constructor(props){
@@ -109,8 +117,11 @@ function ContactMe(props) {
             <HeaderLoader />
         </h1>
         <Tabs>
-        <div label="About Me">
-          <AboutMe />
+        <div className="about-me-table" label="About Me">
+          <div className="about-me-table-row">
+            <AboutMe />
+            <ImageLoader />
+          </div>
         </div>
         <div label="Experience">
           <Experience />
@@ -122,9 +133,6 @@ function ContactMe(props) {
           <ContactMe />
         </div>
       </Tabs>
-          <div className="image-loader">
-            <ImageLoader />
-            </div>
         </div>
 
       );
