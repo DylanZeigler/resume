@@ -2,20 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Tabs from './Tabs';
+import App from './App';
 
 // images
 import parkeImage from './images/parke.jpg';
 
-// function Square(props) {
-//       return (
-//         <button 
-//             className="square" 
-//             onClick = {props.onClick}
-//         >
-//           {props.value}
-//         </button>
-//       );
-//   }
 
 function ImageLoader(props) {
     return <img src={parkeImage} alt="Parkes Headshot" className="parke-image"/>;
@@ -36,9 +27,26 @@ function AboutMe(props) {
 }
 
 function Experience(props) {
-  return <div>
-
-  </div>;
+  return  <div>
+            <h2>C L I E N T S U C C E S S M A N A G E R | N U T R I S L I C E , I N C . | J U N E 2 0 1 8 - P R E S E N T</h2>
+            <ul>  
+              <li>Account training, onboarding, implementation + software support for high value clients</li>
+              <li>Travel to deliver on site trainings and to oversee successful project launches</li>
+              <li>Film, edit, and add special effects to client facing training videos using Camtasia</li>
+              <li>Create marketing materials and user guides for clients</li>
+              <li>Innovate new ideas and able to adapt and be a team player in constantly changing start-up environment</li>
+              <li>In-depth knowledge of Salesforce, HubSpot, and quickly learns new tools and software </li>
+            </ul>
+            <h2>C O M M E R C I A L S A L E S R E P R E S E N T A T I V E | G E I C O | A U G U S T 2 0 1 6 - J U N E 2 0 1 7 </h2>
+            <ul>
+              <li>Recognized as a leader in selling interaction and being detail oriented</li>
+              <li>Key metrics include making 1 sale per active hour on the phone consistently</li>
+              <li>Speak directly with business owners and gave expert advice and guidance</li>
+              <li>Design insurance policy tailored to customer’s specific needs</li>
+            </ul>
+            <h2>M A R K E T I N G / P R I N T E R N | P O L Y M E R S O L U T I O N S , I N C | A U G U S T 2 0 1 5 - J A N U A R Y 2 0 1 6</h2>
+            <h2>M A R K E T I N G E V E N T S I N T E R N | L E A D I N G A U T H O R I T I E S , I N C | M A Y 2 0 1 5 - A U G U S T 2 0 1 5</h2>
+          </div>;
 }
 function Education(props) {
   return <div>
